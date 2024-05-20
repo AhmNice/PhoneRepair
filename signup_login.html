@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+    <div class="main">
+        <div class="backimage"></div>
+        <div class="overlay">
+            <div class="logo"><img src="images/logo.png" alt=""></div>
+            <div class="container">
+                <div class="illustration">
+                    <img src="images/13530141_5244515.jpg" alt="illustration">
+                </div>
+                <div class="formContainer">
+                    <div class="loginContainer hide" id="loginContainer">
+                        <form action="#">
+                            <h2>User Login</h2>
+                            <div class="line"></div>
+                            <div class="containerForm">
+                                <div class="inputClass">
+                                    <!-- <label for="username">Usename</label> -->
+                                    <div class="inputKey">
+                                        <img src="images/icons8-user-50.png" alt="">
+                                        <div class="formInput">
+                                            <input type="text" placeholder=" " name="username" id="username">
+                                        <label for="username" class="label">Username</label>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="inputClass">
+                                    <!-- <label for="username">Usename</label> -->
+                                    <div class="inputKey">
+                                        <img src="images/icons8-key-30.png" alt="">
+                                        <div class="formInput">
+                                            <input type="password" placeholder=" " name="password" id="password">
+                                        <label for="password" class="label">Password</label>
+                                        </div>
+                                    </div>
+                                </div>
+                               <div class="show">
+                                <input type="checkbox" name="showPassword" id="showPassword">
+                                <label for="showPassword"> Show Password</label>
+                               </div>
+    
+                               <div class="btn">
+                                    <button class="submit">Login</button>
+                                    <span> Dont have an account? <a href="#" id="create">create.</a></span>
+                               </div>
+                               <div class="divider">
+                                    <hr>
+                                    <span>or</span><hr>
+                               </div>
+    
+                                <div class="btn">
+                                        <button class="google" id="google"> <img src="images/icons8-google-48.png" alt="">continue with google</button>
+                                    
+                                </div>
+                            </div>
+                        </form>
+    
+                    </div>
+
+                    <div class="signUpContainer " id="signUpContainer">
+                        <form action="#">
+                            <h2>User Sign Up</h2>
+                            <div class="line"></div>
+                            <div class="containerForm">
+                                <div class="inputClass">
+                                    <!-- <label for="username">Usename</label> -->
+                                    <div class="inputKey">
+                                        <img src="images/icons8-user-50.png" alt="">
+                                        <div class="formInput">
+                                            <input type="text" placeholder=" " name="username">
+                                        <label for="username" class="label">Username</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="inputClass">
+                                    <!-- <label for="username">Usename</label> -->
+                                    <div class="inputKey">
+                                        <img src="images/icons8-user-50.png" alt="">
+                                        <div class="formInput">
+                                            <input type="text" placeholder=" " name="fullname" id="fullname">
+                                        <label for="fullname" class="label">Full Name</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="inputClass">
+                                    <!-- <label for="username">Usename</label> -->
+                                    <div class="inputKey">
+                                        <img src="images/icons8-key-30.png" alt="">
+                                        <div class="formInput">
+                                            <input type="password" placeholder=" " name="ppassword" id="Npassword">
+                                        <label for="ppassword" class="label">Password</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inputClass">
+                                    <!-- <label for="username">Usename</label> -->
+                                    <div class="inputKey">
+                                        <img src="images/icons8-padlock-30.png" alt="">
+                                        <div class="formInput">
+                                            <input type="password" placeholder=" " name="password" id="cpassword">
+                                        <label for="username" class="label">Confirm Password</label>
+                                        </div>
+                                    </div>
+                                </div>
+                               <div class="show">
+                                <input type="checkbox" name="NshowPassword" id="NshowPassword">
+                                <label for="NshowPassword"> Show Password</label>
+                               </div>
+
+                               <div class="btn">
+                                <button class="submit">Login</button>
+                                <span> Aready has an account? <a href="#" id="login">Login.</a></span>
+                           </div>
+
+                            </div>
+                        </form>
+                                
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/login.js"></script>
+</body>
+</html>
