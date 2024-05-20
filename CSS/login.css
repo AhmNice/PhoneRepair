@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins; 
+}
+h2{
+    font-family: barlow;
+    color: var(--primary);
+    padding-bottom: 5px;
+}
+p{
+    font-family: poppins;
+    font-size: 14px;
+}
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: overpass;
+    src: url(../fonts/Overpass/static/Overpass-Regular.ttf);
+}
+@font-face {
+    font-family: outfit;
+    src: url(../fonts/Outfit/static/Outfit-Regular.ttf);
+}
+@font-face {
+    font-family: barlow;
+    src: url(../fonts/Barlow/Barlow-Regular.ttf);
+}
+@font-face {
+    font-family: barlowBold;
+    src: url(../fonts/Barlow/Barlow-Bold.ttf);
+}
+:root{
+    --primary:#0e3854;
+    --secondary:#3960ee;
+    --shadow:3px 3px 10px 3px #dddddd;
+    --shadow2:3px 3px 10px 3px #29272786;
+    --padding:40px;
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    gap: 250px;
+    /* align-items: center; */
+}
+.formContainer{
+    width: 400px;
+    box-shadow: var(--shadow2);
+    height: 450px;
+    border-radius: 10px;
+    background-color: white;
+    padding: var(--padding);
+}
+.main{
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+.overlay{
+    background:linear-gradient(
+    90deg,#ffff,
+    #ffff,
+     #ffffff49);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.backimage{
+    background-image: url(../images/repairing-upgrade-mobile-phone-electronic-computer-hardware-technology-concept_39768-10960.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    width: 100%;
+}
+.illustration img{
+    width: 500px;
+}
+.inputKey img{
+    width: 25px;
+}
+.inputKey{
+    display: flex;
+    gap: 10px;
+}
+.line{
+    width: 30%;
+    background-color: var(--primary);
+    height: 2px;
+}
+.containerForm{
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.inputClass{
+    border-bottom: 1px solid var(--primary);
+    width: 100%;
+    position: relative;
+    padding: 0;
+    transition:color 300ms;
+}
+.inputClass::before{
+    content: "";
+    border-bottom: 1px solid var(--secondary);
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    background-color: red;
+    --x:0%;
+    --origin:center;
+    transform:scaleX(var(--x));
+    transition:transform 300ms;
+    transform-origin:center;
+}
+.inputClass:hover::before{
+    --x:100%;
+	--origin:center;
+}
+.inputKey input{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.label{
+    position: absolute;
+    left:30px;
+    top: 0px;
+}
+input:focus~.label,
+:not(input:placeholder-shown)~.label{
+    top: -13px;
+    font-size: 12px;
+    
+}
+.formInput{
+    width: 100%;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn span{
+    font-size: 12px;
+}
+.submit{
+    background-color: #3960ee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: var(--primary);
+}
+.divider{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+
+}
+.hide{
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 20px 10px 5px;
+}
+.divider hr{
+    width: 100%;
+}
+.google img{
+    width: 20px;
+}
+.google{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    width: 80%;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+@media only screen and (max-width:500px){
+    .container{
+        padding: 20px;
+    }
+    .illustration{
+        display: none;
+    }
+}

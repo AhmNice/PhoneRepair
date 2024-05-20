@@ -1,0 +1,93 @@
+.bookingContainer{
+    /* padding: var(--padding); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 1000px;
+}
+.bookingForm{
+    padding: 20px;
+    background-color: white;
+    box-shadow: var(--shadow4);
+    position: absolute;
+    top: 20%;
+}
+p{
+    font-family: outfit;
+    padding: 10px 0;
+}
+.formBack{
+    height: 300px;
+    width: 100%;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: 25% 100%;
+    top: -350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.formOverlay{
+    background-color: rgba(0, 0, 0, 0.514);
+    height:300px ;
+    width: 100%;
+    position: absolute;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+hr{
+    height: 1px;
+    border: none;
+    background-color: black;
+}
+.formClass{
+    display: flex;
+    flex-direction: column;
+}
+.formInput{
+    border: 1px solid var(--primary);
+    border-radius: none;
+    width: 100%;
+}
+input{
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    
+}
+select, textarea{
+    padding: 10px;
+    width: 100%;
+    background: none;
+    border: none;
+    font-family: poppins;
+    outline: none;
+    resize: none;
+    cursor: pointer;
+}
+textarea{
+    font-size: 10px;
+    padding: 5px;
+    height: 105px;
+}
+option{
+    cursor: pointer;
+    font-family: poppins;
+}
+.btn button{
+    cursor: pointer;
+    padding: 5px 20px;
+    border:  none;
+    background-color: var(--secondary);
+    color: white;
+}

@@ -1,0 +1,124 @@
+
+.serviceImg{
+    background-image: url(../images/bg.jpg);
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 25% 100%;
+}
+.overlaySER{
+    height: 320px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.658);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.serviceContent{
+    padding: var(--padding);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.serviceCard{
+    position: absolute;
+    transform: translate(20% 100%);
+    background-color: white;
+    border-radius: 10px;
+    height: max-content;
+    top: -10%;
+    padding:var(--padding) ;
+    /* z-index: 1; */
+    width: max-content;
+    box-shadow: var(--shadow4);
+    display: grid;
+    grid-template-columns: repeat(4, 230px);
+    gap: 20px;
+}
+.serviceCard .card{
+    border: 1px solid #48698052;
+    box-shadow: var(--shadow5);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 30px;
+}
+.service{
+    text-align: center;
+    font-family: poppins;
+    font-size: 15px;
+    color: var(--primary);
+}
+.price{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.price span{
+    font-size: 10px;
+    align-items: first baseline;
+    padding-bottom: 10px;
+}
+.price h3{
+    color: var(--primary);
+    font-size: 25px;
+}
+.bonus{
+    display: flex;
+    padding: 0px;
+}
+.bonusList{
+    font-size: 12px;
+    list-style-type: none;
+}
+.bonusList li{
+    background-image: url(../images/icons8-checkmark-24.png);
+    background-position: left center;
+    background-size: 15px;
+    padding: 0px 18px;
+    background-repeat: no-repeat;
+}
+.chooseBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chooseBtn button{
+    padding: 5px 30px;
+    color: white;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+}
+.chooseBtn button:hover{
+    padding: 5px 30px;
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 2.5px;
+}
+
+@media only screen and (max-width:660px){
+    .serviceCard{
+        display: flex;
+        flex-direction: column;
+        top: -5%;
+    }
+    .serviceCard .card{
+        width: 230px;
+    }
+    .serviceContent{
+        height: 250vh;
+    }
+}
